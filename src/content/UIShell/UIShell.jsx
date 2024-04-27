@@ -78,13 +78,6 @@ class UIShell extends React.Component {
                                                     onClick={() => { this.setState({ activeItem: '/' }) }}>
                                                     Overview
                                                 </SideNavMenuItem>
-                                                <SideNavMenu renderIcon={Fade} title="Inventory" defaultExpanded>
-                                                    <SideNavMenuItem element={Link} to='/inventory/items'
-                                                        isActive={this.state.activeItem === '/inventory/items'}
-                                                        onClick={() => { this.setState({ activeItem: '/inventory/items' }) }}>
-                                                        Items
-                                                    </SideNavMenuItem>
-                                                </SideNavMenu>
                                                 <SideNavMenu renderIcon={Fade} title="Management">
                                                     <SideNavMenuItem href="#">
                                                         Link
