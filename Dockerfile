@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/nodejs-16:1 as builder
+FROM registry.access.redhat.com/ubi9/nodejs-22:1 as builder
 
 USER 1001
 
@@ -10,7 +10,7 @@ RUN npm i -g yarn && \
     yarn cache clean && \
     yarn build
 
-FROM registry.access.redhat.com/ubi8/nodejs-16-minimal:1
+FROM registry.access.redhat.com/ubi9/nodejs-22-minimal:1
 
 USER 1001
 
